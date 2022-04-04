@@ -1,0 +1,254 @@
+:root { 
+--clr1: #4285F4; /* BLUE */
+--clr2: #FBBC05; /* ORANGE */
+--clr3: #34A853; /* GREEN */
+--clr4: #EA4335; /* RED */
+--clr5: #333333; /* BLACK */
+--clr6: #FFffFF; /* SNOW */
+}
+h1,  
+body,
+html {
+  position: relative;
+  margin: 0; padding: 0;
+}  
+.tac {
+  text-align: center;
+}
+a {
+  text-decoration: none;
+}
+header {
+  background-image: url(../assets/imgs/jb_in_shorts.gif);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 60px 100px;
+}
+header,
+header h1 a {
+  text-align: center;
+  background-color: var(--clr1);
+  color: var(--clr6);
+  border-bottom: solid 1px #888;
+  text-decoration: none;
+}
+header ul li {
+  display: inline-block;
+  list-style: none;
+}
+header ul li a {
+  padding: 0.12rem 0;
+  margin: 0 0.88rem 0;
+  color: var(--clr6);
+}
+header ul li a:hover {
+  background-color: var(--clr4);
+}
+.flr {
+  float: right;
+}
+main {
+  margin: 1.88rem auto;
+}
+main section {
+  width: 88%;
+  margin: 1rem auto ;
+  border: solid 1px var(--clr5);
+  border-radius: 0.88rem;
+  text-align: center;
+}
+main section h2,
+main section details {
+  text-align: left;
+  margin: 0 auto 1rem;
+  border-radius: 0.88rem 0.88rem 0 0;
+}
+main section h2 {
+  margin-bottom: 0;
+  background-color: var(--clr2);
+  color: var(--clr5);
+}
+
+/************ START TABLE STUFF ******************** */
+#table,
+main section table {
+  width: 100%;
+  text-align: center;
+  font-size: small;
+}
+main section table tr td {
+  outline: solid 1px #ddd;
+}
+.hvr img {
+  padding: 0.21rem;
+  height: auto;
+}
+.hvr:hover {
+  outline: solid 4px #ccc;
+}  
+/************ END TABLE STUFF ******************** */
+
+section div {
+  text-align: left;
+  padding:  0.88rem;
+}
+
+/*
+.contain {
+  width: 100%;
+  height: 100%;
+  max-height: 3rem;
+  object-fit: contain;
+}
+h3 {
+  margin: 0.42rem; padding: 0;
+  font-size: 1.2em;
+  border-bottom: solid 1px #000;
+}
+h3 {
+  margin-left: 1rem;
+}
+*/
+
+/* AJAX UPLOAD SCREEN */
+#extras, 
+#upform {
+  text-align: left;
+  max-width: 600px;
+  padding: 20px;
+  /*
+  margin-bottom: 0px;
+  border: 0px solid #ccc;
+  font-family: arial, sans-serif;
+  */
+}
+#extras label, 
+#upform label, 
+#extras input,  
+#upform input  {
+  display: inline-block;
+  max-width: 5rem;
+  font-weight: 700;
+}
+#extras i, 
+#upform i, 
+#extras i,  
+#upform i {
+  display: inline-block;
+  width: 48rem;
+  font-size: small;
+}  
+label {
+  font-size: small;
+  max-width: 55rem;
+}
+.WARNING {
+  color:RED;
+  font-weight: 700;
+}  
+#upform div {
+  text-align: center;
+}  
+#imgwidth /* input */ {
+  width: 5.5rem;
+  padding-left: 0.42rem;
+  border-radius: 0.42rem;
+}  
+
+#upform input[type=submit] {
+  border: 0;
+  padding: 0.12rem 0.42rem;
+  border-radius: 0.42rem;
+  border: outset 3px RED;
+}
+#upform input[type=submit]:hover {
+  background: var(--clr3);
+  color: var(--clr5);
+}  
+
+#shake {
+  input: invalid {
+  animation: shake 300ms;
+}  
+@keyframes shake {
+  25% { transform: translated(4px); }
+  50% { transform: translated(-4px); }
+  75% { transform: translated(4px); }
+}
+
+}
+#show {
+  font-size: large;
+  text-align: center;
+}
+#show a {
+  border: outset 3px #ccc;
+  padding: 0.12rem 0.42rem;
+  background-color: var(--clr3);
+  color: var(--clr5);
+}
+footer {
+  position: fixed;
+  left: 0; bottom: 0;
+  width: 100%;
+  background-color: var(--clr2);
+  color: var(--clr5, #000);
+}
+
+/* XXXXXXXXXXXXXXXX OLD STUFF BELOW XXXXXXXXXXXXXXXXXXXX */
+.XXX-form {
+  font-family: arial, sans-serif;
+  text-align: left;
+  padding: 0 1.42rem 1.42rem;
+  padding: 0;
+  line-height: 2;
+  border: dotted 4px RED;
+  background: #f2f2f2;
+  color: var(--clr5);
+}
+.XXX-form label {
+  display: inline-block;
+  width: 4.2rem;
+  margin-right: 0.42rem;
+  font-weight: 700;
+}
+.XXX-form input {
+  margin-bottom: 1.88rem;
+  width: 5rem;
+}
+.XXX-form input[type=submit] {
+  /*
+  */
+  display: block;
+  display: inline-block;
+  width: 88%;
+  text-align: center;
+  border: 0;
+  padding: 5px;
+  background: var(--clr3);
+  color: var(--clr6, #fff);
+}
+.XXX-aside {
+  display: none;
+  /*
+  position:  sticky;
+  left: 0; top: 3.4rem;
+  */
+  position: absolute;
+  left: 0; top: 5.5rem;
+  width: 6.4rem; height: 12rem;
+  border: dotted 3px BLUE;
+  font-size: small;
+  background-color: LIME;
+  line-height: 2;
+}
+.XXX-aside ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.XXX-aside ul li a {
+  text-decoration: none;
+  margin: 0.42rem 0 .88rem 0.21rem;
+  padding: 0;
+}
